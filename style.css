@@ -1,0 +1,258 @@
+/* link color: #78350f*/
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  background-color: #eee;
+}
+
+/*************/
+/* header */
+/*************/
+
+.header {
+  width: 100%;
+  padding: 3.2rem 2.6rem 0;
+  position: sticky;
+  top: 0;
+  background-color: #eee;
+  z-index: 1;
+}
+
+.header-container {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+.logo {
+  width: 30rem;
+}
+
+.header-img {
+  width: 100%;
+}
+
+.nav-ul {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.nav-li {
+  list-style: none;
+}
+
+.nav-li a,
+.nav-li a:link,
+.nav-li a:visited {
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+
+.nav-li a:hover,
+.nav-li a:active {
+  color: #78350f;
+}
+
+/* Main */
+
+.main,
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  width: 70%;
+}
+
+/* Hero Section */
+
+.hero {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.heading-secondary {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.email-form {
+  padding: 0.6rem 0.4rem;
+  width: 20rem;
+  margin-bottom: 1.6rem;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  background-color: #fbbf24;
+  border: none;
+  display: inline-block;
+
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Guide section */
+
+.headering-3rd {
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+.guide-section {
+  margin-bottom: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 2rem;
+}
+
+.icon {
+  display: inline-block;
+  width: 6rem;
+  height: 6rem;
+  color: #d97706;
+  z-index: -1;
+  left: 0;
+}
+
+.icon-div {
+  display: flex;
+  justify-content: flex-end;
+}
+/* Video section */
+
+.video {
+  margin-top: 7rem;
+}
+
+/* Pricing section */
+
+.pricing {
+  margin-top: 7rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+}
+
+.card {
+  width: 30rem;
+  border: 1px solid #333;
+  text-align: center;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 4rem;
+}
+
+.heading-4th {
+  background-color: rgb(206, 206, 206);
+  padding: 1.6rem 0;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.pricing-h3 {
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+
+.pricing-ul {
+  list-style: none;
+  margin-bottom: 3rem;
+}
+
+.btn--select {
+  width: 40%;
+  padding: 1.8rem 0;
+}
+
+/* footer */
+
+.footer {
+  margin-top: 3rem;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  font-size: 1.2rem;
+  color: #555;
+  font-weight: 500;
+  background-color: rgb(206, 206, 206);
+}
+
+.footer-ul {
+  margin-bottom: 1.4rem;
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+
+  font-size: 1.6rem;
+}
+
+.footer-list {
+  list-style: none;
+}
+
+.footer-list a,
+.footer-list a:link,
+.footer-list a:visited {
+  text-decoration: none;
+  color: #333;
+  cursor: poin footer-links;
+}
+
+.footer-list a:hover,
+.footer-list a:active {
+  color: #78350f;
+}
+
+/*  */
+@media (max-width: 59em) {
+  .header {
+    width: 100%;
+  }
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 1.4rem;
+  }
+  .nav-ul {
+    display: flex;
+
+    gap: 1.4rem;
+  }
+
+  .pricing {
+    margin-top: 7rem;
+
+    grid-template-columns: 1fr;
+  }
+}
